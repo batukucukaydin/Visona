@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		982710642EB3CEB600FA0911 /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9827105C2EB3CE5100FA0911 /* MontserratAlternates-Bold.ttf */; };
+		982710652EB3CEBB00FA0911 /* MontserratAlternates-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9827105D2EB3CE5100FA0911 /* MontserratAlternates-Medium.ttf */; };
+		982710662EB3CEBF00FA0911 /* MontserratAlternates-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9827105E2EB3CE5100FA0911 /* MontserratAlternates-Regular.ttf */; };
+		982710672EB3CEC800FA0911 /* MontserratAlternates-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9827105F2EB3CE5100FA0911 /* MontserratAlternates-SemiBold.ttf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		98CF3F972EB12349003D8F90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,20 +31,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9827105C2EB3CE5100FA0911 /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
+		9827105D2EB3CE5100FA0911 /* MontserratAlternates-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Medium.ttf"; sourceTree = "<group>"; };
+		9827105E2EB3CE5100FA0911 /* MontserratAlternates-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Regular.ttf"; sourceTree = "<group>"; };
+		9827105F2EB3CE5100FA0911 /* MontserratAlternates-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-SemiBold.ttf"; sourceTree = "<group>"; };
 		98CF3F892EB12347003D8F90 /* Visona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CF3F962EB12349003D8F90 /* VisonaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisonaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CF3FA02EB12349003D8F90 /* VisonaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisonaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		98E57FD82EB288FD004335DA /* Exceptions for "Visona" folder in "Visona" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				VisonaTests/VisonaTests.swift,
+			);
+			target = 98CF3F882EB12347003D8F90 /* Visona */;
+		};
+		98E580142EB2A7B0004335DA /* Exceptions for "Visona" folder in "VisonaTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				VisonaTests/VisonaTests.swift,
+			);
+			target = 98CF3F952EB12349003D8F90 /* VisonaTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		98CF3F8B2EB12347003D8F90 /* Visona */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				98E57FD82EB288FD004335DA /* Exceptions for "Visona" folder in "Visona" target */,
+				98E580142EB2A7B0004335DA /* Exceptions for "Visona" folder in "VisonaTests" target */,
+			);
 			path = Visona;
-			sourceTree = "<group>";
-		};
-		98CF3F992EB12349003D8F90 /* VisonaTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = VisonaTests;
 			sourceTree = "<group>";
 		};
 		98CF3FA32EB12349003D8F90 /* VisonaUITests */ = {
@@ -72,13 +100,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9827105B2EB3CE1600FA0911 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9827105C2EB3CE5100FA0911 /* MontserratAlternates-Bold.ttf */,
+				9827105D2EB3CE5100FA0911 /* MontserratAlternates-Medium.ttf */,
+				9827105E2EB3CE5100FA0911 /* MontserratAlternates-Regular.ttf */,
+				9827105F2EB3CE5100FA0911 /* MontserratAlternates-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		98CF3F802EB12347003D8F90 = {
 			isa = PBXGroup;
 			children = (
 				98CF3F8B2EB12347003D8F90 /* Visona */,
-				98CF3F992EB12349003D8F90 /* VisonaTests */,
 				98CF3FA32EB12349003D8F90 /* VisonaUITests */,
 				98CF3F8A2EB12347003D8F90 /* Products */,
+				9827105B2EB3CE1600FA0911 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,9 +168,6 @@
 			);
 			dependencies = (
 				98CF3F982EB12349003D8F90 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				98CF3F992EB12349003D8F90 /* VisonaTests */,
 			);
 			name = VisonaTests;
 			packageProductDependencies = (
@@ -212,6 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982710672EB3CEC800FA0911 /* MontserratAlternates-SemiBold.ttf in Resources */,
+				982710662EB3CEBF00FA0911 /* MontserratAlternates-Regular.ttf in Resources */,
+				982710652EB3CEBB00FA0911 /* MontserratAlternates-Medium.ttf in Resources */,
+				982710642EB3CEB600FA0911 /* MontserratAlternates-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +440,10 @@
 				DEVELOPMENT_TEAM = 83B68838R2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Visona/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We save your generated images to your Photos library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +472,10 @@
 				DEVELOPMENT_TEAM = 83B68838R2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Visona/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We save your generated images to your Photos library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
